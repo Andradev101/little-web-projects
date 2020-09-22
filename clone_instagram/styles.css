@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100vh;
+}
+#home-div{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-box{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 194, 194);
+    padding: 10px 35px;
+}
+
+#container-main #home-div #home-phones #phone{
+    height: 618px;
+    position: relative;
+}
+#container-main #home-div #home-phones #phone #phone-content{
+    position: relative;
+    background-color: blue;
+}
+#container-main #home-div #home-phones #phone #phone-content img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#login-container{
+    width: 48vh;
+}
+#login-container #login-box .input-block input{
+    padding: 10px;
+    outline: 0;
+    border: 1px solid;
+    border-color: rgb(194, 194, 194);
+    background-color: rgb(192, 192, 192, 0.1);
+    height: 40px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+#login-box, #create-acc-container, #get-app{
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    background-color: rgb(255, 255, 255);
+}
+#login-box{
+    width: 100%;
+    height: 100%;
+}
+#login-box #logo{
+    width: 190px;
+    margin-bottom: 40px;
+}
+#login-box .input-block{
+    width: 100%;
+}
+#login-box .input-block input{
+    width: 100%;
+}
+#login-box #submit-btn input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#separator{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#separator .line{
+    background-color: rgb(194, 194, 194);;
+    width: 100px;
+    height: 1px;
+    margin: 0 5px;
+}
+#facebook, #lost-pass{
+    margin: 10px 0;
+}
+#get-app{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#get-app p{
+    margin: 10px 0;
+}
+#get-app a img{
+    width: 130px;
+}
+#get-app #store-btns{
+    display: flex;
+}
+#get-app #store-btns a{
+    margin: 0 2px;
+}
+#create-acc-container{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 194, 194);
+    padding: 20px 40px;
+    margin-top: 10px;
+}
