@@ -28,16 +28,11 @@ body{
 
 #container-main #home-div #home-phones #phone{
     height: 618px;
-    position: relative;
 }
 #container-main #home-div #home-phones #phone #phone-content{
     position: relative;
-    background-color: blue;
-}
-#container-main #home-div #home-phones #phone #phone-content img{
-    position: absolute;
-    left: 0;
-    top: 0;
+    top: -523px;
+    left: 151px;
 }
 #login-container{
     width: 48vh;
