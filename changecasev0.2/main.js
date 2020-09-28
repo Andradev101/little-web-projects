@@ -41,7 +41,7 @@
         getText();
         var capString = (msg) => msg[0].toUpperCase() + msg.slice(1).toLowerCase();
         msg = msg.replace(/\r\n|\n|\r/gm, "");
-        var phrase = msg.split('. ').map(capString);
+        var phrase = msg.split('. ' && ".").map(capString);
         var result = phrase.join('. ');
         document.getElementById("txtarea").value = result; //troca o msg do txtarea para o de result			
     }
