@@ -1,3 +1,4 @@
+@import "compass/css3";
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +7,14 @@
 body{
     background-color: rgb(241, 241, 241);
 }
-a{
+/*All page font-configs*/
+a, p , span, ::placeholder{
     text-decoration: none;
+    color: black;
+    font-family: 'Quicksand','Poppins', sans-serif;
+}
+#post-header a{
+    font-weight: bold;
 }
 header{
     display: flex;
@@ -44,7 +51,7 @@ header #search-box{
     z-index: 10;
 }
 header nav a{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 10px;
     color: black;
 }
@@ -154,12 +161,16 @@ header nav a{
     height: 10vh;
     overflow: hidden;
     padding: 0;
+    padding: 0 10px;
+}
+#main #posts #comments span{
+    font-weight: bold;
 }
 #main #posts #comment-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6vh;
+    height: 8vh;
 }
 #main #posts #comment-container input{
     width: 90%;
@@ -167,6 +178,8 @@ header nav a{
 
     outline: none;
     border: none;
+    padding: 10px;
+    border-top: 1px solid rgb(216, 216, 216);
 }
 #main #posts #comment-container button{
     width: 10%;
@@ -178,12 +191,13 @@ header nav a{
     font-weight: 600;
     cursor: pointer;
     background-color: white;
+    border-top: 1px solid rgb(216, 216, 216);
+
 }
 #main #aside{
     position: static;
     right: 160px;
-    width: 350px;
-    height: 50vh;
+    width: 310px;
 }
 #main #aside #user-div{
     display: flex;
@@ -200,4 +214,59 @@ header nav a{
     background-color: rgb(206, 206, 206);
     border-radius: 50%;
     margin: 0 10px 0 10px;
+}
+#main #aside #user-div #user-links a{
+    font-weight: bold;
+    font-size: 14px;
+}
+#main #aside #user-div #user-links p{
+    font-size: 12px;
+}
+#main #aside #suggestions #suggestion-for-you,
+#main #aside #suggestions .aside-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main #aside #suggestions #suggestion-for-you{
+    margin-bottom: 20px;
+}
+#main #aside #suggestions #suggestion-for-you a{
+    font-size: 13px;
+    font-weight: bold;
+}
+#main #aside #suggestions .aside-user{
+    padding: 5px 0;
+}
+#main #aside #suggestions .aside-user button{
+    height: 100%;
+
+    outline: none;
+    border: none;
+    color: rgb(56, 114, 238);
+    font-weight: 600;
+    cursor: pointer;
+}
+#main #aside #suggestions #left-part{
+    display: flex;
+    align-items: center;
+}
+#main #aside #suggestions #left-part #aside-links{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#main #aside #suggestions #left-part a{
+    display: block;
+    font-weight: bold;
+}
+#main #aside #suggestions #left-part p{
+    font-size: 12px;
+}
+#main #aside #suggestions #left-part .aside-user-img{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    margin-left: 5px; 
 }
