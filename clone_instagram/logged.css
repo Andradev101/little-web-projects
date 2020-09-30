@@ -1,14 +1,14 @@
-@import "compass/css3";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    width: 100vw;
     background-color: rgb(241, 241, 241);
 }
 /*All page font-configs*/
-a, p , span, ::placeholder{
+a, p , span, ::placeholder, button{
     text-decoration: none;
     color: black;
     font-family: 'Quicksand','Poppins', sans-serif;
@@ -129,10 +129,13 @@ header nav a{
 #main #posts #post-header a{
     margin-left: 10px;
 }
-#main #posts #post-header #config-user-post{
+#main #posts #post-header .config-user-post{
     font-size: 8px;
     margin-left: auto; 
     margin-right: 15px;
+    outline: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 #main #posts #photo-post{
     background-color: rgba(255, 255, 255);
