@@ -12,19 +12,30 @@ for (let i = 0; i < popopenbtn.length; i++) {
 function openpopup(){
     popup.style.visibility = "visible";
     popmenu.style.visibility = "visible";
+    popmenu.classList.add("zoomout");  
     body.style.position = 'fixed';
 }
 
 popclosebtn.addEventListener("click", ()=>{
     popup.style.visibility = "hidden";
     popmenu.style.visibility = "hidden";
+    popmenu.classList.remove("zoomout");
     body.style.position = 'initial';
-    console.log("why?");
-
+    
 })
+
+popclosebtn.addEventListener("mousedown", ()=>{
+    popclosebtn.style.backgroundColor = "rgb(220,220,220)";
+})
+popclosebtn.addEventListener("mouseup", ()=>{
+    popclosebtn.style.backgroundColor = "rgb(255,255,255)";
+})
+
+
 popup.addEventListener("click", ()=>{
     popup.style.visibility = "hidden";
     popmenu.style.visibility = "hidden";
+    popmenu.classList.remove("zoomout");
     body.style.position = 'initial';
 
 })

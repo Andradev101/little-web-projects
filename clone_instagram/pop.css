@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
 #popup #pop-menu{
     display: flex;
     justify-content: center;
@@ -23,18 +23,39 @@
     flex-direction: column;
     border-radius: 100px;
     width: 25%;
+
+    overflow:hidden;
+    border-radius: 10px;
 }
-#popup #pop-menu a, #popup #pop-menu #popclosebtn{
+.zoomout{
+    animation-name: zoomout;
+    animation-duration: 0.1s;
+}
+#popup #pop-menu button, #popup #pop-menu #popclosebtn{
     text-align: center;
     width: 100%;
-    padding: 13px 20px;
+    padding: 15px 20px;
     background-color: white;
     border: 0;
     outline: 0;
     background-color: white;
-}
-#popup #pop-menu a, #popup #pop-menu #popclosebtn{
     border-top: 1px solid rgb(216, 216, 216);
-    font-size: initial;
+    font-size: 14px;
     cursor: pointer;
+}
+
+#repobtn,
+#unfbtn{
+    font-weight: 700;
+    color: #ed4956;
+}
+/*animations*/
+@keyframes zoomout {
+    0% {transform: scale(1.15)}
+    100% {transform: scale(1)}
+}
+@keyframes heart {
+    0% {transform: scale(0)}
+    80%{transform: scale(1)}
+    100% {transform: scale(1.20)}
 }
