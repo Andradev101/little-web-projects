@@ -27,9 +27,18 @@
     overflow:hidden;
     border-radius: 10px;
 }
+.heart{
+    animation-name: heart;
+    animation-duration: 0.2s;
+}
 .zoomout{
     animation-name: zoomout;
     animation-duration: 0.1s;
+}
+.fadeout{
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-delay: 2s;
 }
 #popup #pop-menu button, #popup #pop-menu #popclosebtn{
     text-align: center;

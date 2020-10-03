@@ -81,16 +81,23 @@ header nav a{
     display: flex;
     align-items: center;
 
-    height: 125px;
+    height: 115px;
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(216, 216, 216);
     width: 100%;
     border-radius: 5px;
     margin-bottom: 25px;
+    padding: 0 15px;
+}
+#main #stories .stories-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #main #stories .user-stories{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: rgb(206, 206, 206);
     border-radius: 50%;
     margin: 0 5px 0 5px;
@@ -99,9 +106,9 @@ header nav a{
     align-items: flex-end;
     justify-content: center;
 }
-#main #stories .user-stories a{
-    position: relative;
-    bottom: -20px;
+#main #stories .stories-container a{
+    margin-top: 3px;
+    font-size: 14px;
 }
 #main #posts{
     width: 100%;
@@ -141,10 +148,9 @@ header nav a{
 }
 #main #posts #photo-post{
     background-color: rgba(255, 255, 255);
-    height: 100%;
 }
 #main #posts #photo-post #mock-div{
-    /*CONTINUE HERE*/
+    width: 100%;
 }
 #main #posts #photo-post img{
     width: 100%;
