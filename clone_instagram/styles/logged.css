@@ -136,6 +136,10 @@ header nav a{
 #main #posts #post-header a{
     margin-left: 10px;
 }
+#main #posts #post-header a:hover{
+    border-bottom: 1px solid black;
+    margin-bottom: -1px;
+}
 #main #posts #post-header .config-user-post{
     font-size: 8px;
     margin-left: auto; 

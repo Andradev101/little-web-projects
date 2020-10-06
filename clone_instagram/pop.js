@@ -23,12 +23,11 @@ popup.addEventListener("click", ()=>{
 })
 popclosebtn.addEventListener("mousedown", ()=>{
     popclosebtn.style.backgroundColor = "rgb(220,220,220)";
+    console.log("hey");
 })
 popclosebtn.addEventListener("mouseup", ()=>{
     popclosebtn.style.backgroundColor = "rgb(255,255,255)";
 })
-
-
 //functions
 function getScroll(){
     let scrollY = document.body.style.top;
