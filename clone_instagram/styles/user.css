@@ -1,0 +1,86 @@
+#user-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#user-tab{
+    width: 60vh;
+}
+#user-info, #followers-div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+#user-profile-pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-right: 100px;
+}
+#user-profile-pic{
+    background-color: grey;
+}
+#user-info {
+    height: 4vh;
+}
+#user-info p{
+    font-size: 30px;
+    font-weight: 300;
+}
+#user-info a{
+    font-size: 14px;
+    margin-left: 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 2px 8px;
+}
+#user-bio{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+#config-user-btn{
+    font-size: 20px;
+    margin-left: 20px;
+    border: 0;
+    outline: 0;
+}
+p ~ p{
+    margin-left: 20px;
+}
+p span{
+    font-weight: 500;
+}
+#stories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+#stories .stories-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#stories .user-stories{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    margin: 0 20px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#stories .stories-container a{
+    margin-top: 3px;
+    font-size: 14px;
+}
