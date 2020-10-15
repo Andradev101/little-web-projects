@@ -21,6 +21,8 @@
     background-color: grey;
 }
 #user-info {
+    display: flex;
+    align-items: center;
     height: 4vh;
 }
 #user-info p{
@@ -28,6 +30,7 @@
     font-weight: 300;
 }
 #user-info a{
+    margin-top: 5px;
     font-size: 14px;
     margin-left: 20px;
     border: 1px solid rgb(216, 216, 216);
@@ -56,11 +59,10 @@ p span{
     align-items: center;
     justify-content: center;
     
-    width: 50%;
     border-radius: 5px;
     padding: 10px 5px;
     margin: auto;
-    margin-top: 50px;
+    margin: 50px 0px;
 
 }
 #stories .stories-container{
@@ -83,4 +85,13 @@ p span{
 #stories .stories-container a{
     margin-top: 3px;
     font-size: 14px;
+}
+#separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 1px;
+    width: 50vw;
+    background-color:  rgb(206, 206, 206);
 }

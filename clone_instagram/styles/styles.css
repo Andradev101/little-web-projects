@@ -35,6 +35,18 @@ body{
     left: 151px;
     width: 240px;
 }
+#container-main #home-div #home-phones #phone #phone-content .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#container-main #home-div #home-phones #phone #phone-content #image1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 #login-container{
     width: 48vh;
 }
@@ -144,7 +156,7 @@ footer a{
 }
 .fadeout{
     animation-name: fadeout;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
 }
 @keyframes fadeout{
     0% {opacity: 1;}

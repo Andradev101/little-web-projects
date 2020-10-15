@@ -13,7 +13,7 @@ a, p , span, ::placeholder, button{
     color: black;
     font-family: 'Quicksand','Poppins', sans-serif;
 }
-#post-header a{
+.post-header a{
     font-weight: bold;
 }
 header{
@@ -32,6 +32,7 @@ header{
 }
 header img{
     width: 110px;
+    margin-top: 10px;
 }
 header #search-box{
     display: flex;
@@ -110,7 +111,7 @@ header nav a{
     margin-top: 3px;
     font-size: 14px;
 }
-#main #posts{
+#main .posts{
     width: 100%;
     background-color: rgb(206, 206, 206);
     border: 1px solid rgb(216, 216, 216);
@@ -118,7 +119,7 @@ header nav a{
     margin-bottom: 20px;
 }
 
-#main #posts #post-header{
+#main .posts .post-header{
     display: flex;
     align-items: center;
 
@@ -126,21 +127,21 @@ header nav a{
     height: 60px;
     background-color: rgb(250, 250, 250);
 }
-#main #posts #post-header #user-img{
+#main .posts .post-header .user-img{
     width: 40px;
     height: 40px;
     background-color: rgb(206, 206, 206);
     border-radius: 50%;
     margin-left: 5px; 
 }
-#main #posts #post-header a{
+#main .posts .post-header a{
     margin-left: 10px;
 }
-#main #posts #post-header a:hover{
+#main .posts .post-header a:hover{
     border-bottom: 1px solid black;
     margin-bottom: -1px;
 }
-#main #posts #post-header .config-user-post{
+#main .posts .post-header .config-user-post{
     font-size: 8px;
     margin-left: auto; 
     margin-right: 15px;
@@ -150,49 +151,49 @@ header nav a{
     padding: 10px;
     cursor: pointer;
 }
-#main #posts #photo-post{
+#main .posts .photo-post{
     background-color: rgba(255, 255, 255);
 }
-#main #posts #photo-post #mock-div{
+#main .posts .photo-post .mock-div{
     width: 100%;
 }
-#main #posts #photo-post img{
+#main .posts .photo-post img{
     width: 100%;
     height: 100%;
 }
-#main #posts #reactions-btns{
+#main .posts .reactions-btns{
     background-color: rgb(250, 250, 250);
     display: flex;
     align-items: center;
     height: 50px;
     padding: 0 10px;
 }
-#main #posts #reactions-btns a{
+#main .posts .reactions-btns a{
     color: black;
     font-size: 25px;
     margin-right: 20px;
 }
-#main #posts #reactions-btns #all-right-btn{
+#main .posts .reactions-btns .all-right-btn{
     margin-left: auto;
     margin-right: 0;
 }
-#main #posts #comments{
+#main .posts .comments{
     background-color: rgb(250, 250, 250);
     height: 10vh;
     overflow: hidden;
     padding: 0;
     padding: 0 10px;
 }
-#main #posts #comments span{
+#main .posts .comments span{
     font-weight: bold;
 }
-#main #posts #comment-container{
+#main .posts .comment-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8vh;
 }
-#main #posts #comment-container input{
+#main .posts .comment-container input{
     width: 90%;
     height: 100%;
 
@@ -201,7 +202,7 @@ header nav a{
     padding: 10px;
     border-top: 1px solid rgb(216, 216, 216);
 }
-#main #posts #comment-container button{
+#main .posts .comment-container button{
     width: 10%;
     height: 100%;
 
@@ -228,7 +229,7 @@ header nav a{
     padding: 5px;
     height: 105px;
 }
-#main #aside #user-div #user-img{
+#main #aside #user-div .user-img{
     width: 60px;
     height: 60px;
     background-color: rgb(206, 206, 206);

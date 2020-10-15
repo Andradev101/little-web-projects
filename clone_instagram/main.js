@@ -4,6 +4,6 @@ function changephoto() {
     i<images.length-1?i+=1:i=0;
     image.src=images[i];
     image.classList.add("fadeout");
-
+    console.log(images[i]);
 }
 setInterval(changephoto, 3000);
