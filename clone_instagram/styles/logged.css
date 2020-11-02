@@ -319,3 +319,18 @@ header nav a{
     font-size: 11px;
     color: rgb(141, 141, 141);
 }
+#posts-container .post-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+#posts-container .post-row .post-thumb{
+    height: 293px;
+    width: 293px;
+    background-color:  rgb(141, 141, 141);
+    margin: 10px;
+}
+

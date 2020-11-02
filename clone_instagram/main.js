@@ -1,9 +1,7 @@
-const image = document.getElementById("image");
-let images = ["img/showcase_1.jpg","img/showcase_2.jpg","img/showcase_3.jpg"], i = 0;
-function changephoto() {
-    i<images.length-1?i+=1:i=0;
-    image.src=images[i];
-    image.classList.add("fadeout");
-    console.log(images[i]);
-}
-setInterval(changephoto, 3000);
+var imgs = document.querySelectorAll('#phone-content img'), i=0;
+console.log(imgs);
+
+Array.prototype.forEach.call(imgs, function(img){
+	setTimeout(function (){img.classlist.add('visible')}, 700*i)
+	i++;
+})
